@@ -1,11 +1,13 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
 {% block title %}About us{% endblock %}
 
 {% block content %}
 <div class="features">
     <h1>About us</h1>
-    <p>Email: news@gmail.co</p>  
-    <button class="btn btn-danger">Just press</button>
+    <h3>What is the Pet / Proj ?</h3>
+    <p id="about-page-summary">It is the simple website about social networking services and messengers. Here you can find some information and link to popular services, read history about how they growed and more another useful information.</p>
+    <a href="{% url 'home' %}"><img id="about-us-img" src="{% static 'main/img/logo.jpeg' %}" alt="Logo"></a>
 </div> 
 {% endblock %}

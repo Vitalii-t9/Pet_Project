@@ -14,6 +14,8 @@ body{
     border-right: 0px;
     position: fixed;
     top: 0px;
+    z-index: 10;
+    
     
     
     
@@ -33,40 +35,43 @@ body{
 
 .user{
     color: #fff;
-    margin-right: 40px;
-    
+    margin-right: 40px;   
 }
+
 .user-name{
     margin-left: 10px;
-    border: 0.5px solid #ef233c;
-    border-radius: 5px;
-    padding: 2px 5px 2px 5px;
+    border-bottom: 0.5px solid #ef233c;
+    padding-bottom: 2px;
 }
-.logout-link{
-    border: 0.5px solid #fff;
+
+.logout-link a{
     border-radius: 5px;
-    padding: 2px 5px 2px 5px;
+    border: 1px solid #fff;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+    color: #fff;
     
-
 }
 
-.log-in-link{
-    border: 2px solid #fff;
-    border-radius: 5px;
-    padding: 2px 5px 2px 5px;
-    transition: transform .5s ease;
-}
-.log-in-link:hover{
-    transform: scale(1.05);
-    background-color: white;
-    border: 2px solid #ffc300;
-}
+
+
+.logout-link a:hover,
 .log-in-link a:hover{
     color: #003566;
+    transform: scale(1.05);
+    background-color: white;
+    border: 2px solid #10812c;
 }
 .log-in-link a{
     text-decoration: none;
     color: #fff;
+    transform: scale(1.05);
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    
+
+    
 }
 /* Aside bar */
 aside{
@@ -146,18 +151,14 @@ main .features h1{
     font-size: 50px;
 }
 
-main .features p{
-    max-width: 400px;
-    margin: 20px auto;
-}
-
 .alert-warning{
     float: left;
-    clear: both;
+    /* clear: both; */
     width: 500px;
     margin: 20px 34%;
     text-align: left;
     margin-left: 260px;
+    z-index: 5;
     
 }
 
@@ -165,6 +166,12 @@ form{
     margin-left: 26%;
     width: 500px;
     margin-top: 50px;
+}
+/* Home page */
+#about-page-summary{
+    width: 600px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 /* News list */
@@ -182,7 +189,11 @@ form{
 
 
 /* News detail view */
-
+#article-full-text{
+  width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
 /* button effects  */
 #telegram-img,
 #instagram-img,
@@ -282,4 +293,8 @@ form{
 #login-again-link{
     text-align: center;
 }
-
+/* About us page */
+#about-us-img{
+    width: 400px;
+    border-radius: 10px;
+}
