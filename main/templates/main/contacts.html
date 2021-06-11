@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Contacts</h1>
+    <div class="contacts-section">
+        <span class="contacts-type">Email:</span><br>
+        <a href="mailto:news@gmail.com" class="contacts-section-link">news@gmail.com</a><br><br>
+        <span class="contacts-type">Phone:</span><br>
+        <a href="tel:+380442234354" class="contacts-section-link">+38-(044)-223-43-54</a><br><br>
+        <span class="contacts-type">Telegram:</span><br>
+        <a href="https://telegram.org/"><img id="telegram-img" src="{% static 'main/img/telegramlogo.png' %}" alt="Telegram logo"></a><br><br>
+        <span class="contacts-type">Instagram:</span><br>
+        <a href="https://www.instagram.com" ><img id="instagram-img" src="{% static 'main/img/instagramlogo.jpeg' %}" alt="Instagram logo"></a>
+        
+    </div>
+</div> 
+{% endblock %}
