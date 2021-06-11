@@ -30,6 +30,44 @@ body{
     
     margin-top: 0px;
 }
+
+.user{
+    color: #fff;
+    margin-right: 40px;
+    
+}
+.user-name{
+    margin-left: 10px;
+    border: 0.5px solid #ef233c;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+.logout-link{
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    
+
+}
+
+.log-in-link{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    transition: transform .5s ease;
+}
+.log-in-link:hover{
+    transform: scale(1.05);
+    background-color: white;
+    border: 2px solid #ffc300;
+}
+.log-in-link a:hover{
+    color: #003566;
+}
+.log-in-link a{
+    text-decoration: none;
+    color: #fff;
+}
 /* Aside bar */
 aside{
     float: left;
@@ -146,6 +184,8 @@ form{
 /* News detail view */
 
 /* button effects  */
+#telegram-img,
+#instagram-img,
 .btn-danger,
 .btn-warning,
 .btn-success,
@@ -153,7 +193,8 @@ form{
     transition: transform .5s ease;
     
 }
-
+#telegram-img:hover,
+#instagram-img:hover,
 .btn-danger:hover,
 .btn-warning:hover,
 .btn-success:hover,
@@ -180,3 +221,65 @@ form{
     border-radius: 25px;
     margin-top:15px;
 }
+/* User authentication block */
+.user-auth-block{
+    
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    color: #fff;
+}
+.login-message{
+    text-align: center;
+    color: yellow;
+}
+.lost-password-link{
+    margin-left: 210px;
+    padding-top: 10px;
+    
+}
+#reset-password-link{
+    color: #fff
+}
+
+.user-auth-block .password-reset-done-message{
+    width: 500px;
+    text-align: center;
+}
+
+#tr-1-log td, #tr-2-log td{
+    padding-bottom: 1em;
+}
+
+#tr-2-log td label{
+    margin-left: 5px;
+}
+
+#login-button{
+    width: 260px;
+    
+}
+/* Change password page */
+.change-password-form{
+    width: 800px;
+    position: absolute;
+    left: -150px
+}
+.change-password-p-info{
+    margin-left: 120px;
+}
+#tr-1 td,#tr-2 td{
+    padding-bottom: 1em;
+}
+
+#tr-1 td label{
+    
+    margin-left: 25px;
+}
+
+/* Password reset complete page */
+
+#login-again-link{
+    text-align: center;
+}
+
